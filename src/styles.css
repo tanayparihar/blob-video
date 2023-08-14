@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+:root {
+  --dark: #1d1d1d;
+  --light: #fff;
+  --green: #28a92b;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--green);
+  font-weight: 600;
+  color: var(--light);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  border: 1px solid red;
+}
+.wrapper video {
+  width: 100%;
+}
+.wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid blue;
+}
+
+.wrapper svg path {
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+.wrapper svg path {
+}
+body {
+  margin: 60px 50px 0;
+}
+.wrapper:before,
+.wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #fff;
+}
+.wrapper:before {
+  left: -9px;
+}
+.wrapper:after {
+  right: -5px;
+}
+
+path {
+  background: red;
+  fill: red;
+  stroke: red;
+}
